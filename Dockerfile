@@ -14,7 +14,7 @@ RUN apt-get update                                                      && \
     cd vim                                                              && \
     ./configure --with-features=huge --enable-luainterp                    \
         --enable-gui=no --without-x --prefix=/usr                       && \
-    make VIMRUNTIMEDIR=/usr/share/vim                                   && \
+    make VIMRUNTIMEDIR=/usr/share/vim/vim80                             && \
     make install                                                        && \
 # get go tools
     go get golang.org/x/tools/cmd/godoc                                 && \
