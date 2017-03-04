@@ -1,4 +1,5 @@
 # go-vim Docker image
+### Forked from [mbrt/go-docker-dev](https://github.com/mbrt/go-docker-dev)
 This Docker image adds [Go](https://golang.org/) tools and the following vim plugins to the [official Go image](https://registry.hub.docker.com/_/golang/):
 
 * [vim-go](https://github.com/fatih/vim-go)
@@ -24,3 +25,4 @@ docker run --rm -tiv `pwd`:/go mbrt/golang-vim-dev
 ## Limitations
 
 This image lacks [gdb](https://golang.org/doc/gdb) support. If anyone has managed to get it working on this image, please let me know (breakpoints are not working for me).
+
