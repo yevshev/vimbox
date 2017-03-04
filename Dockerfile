@@ -1,5 +1,5 @@
 FROM golang:latest
-MAINTAINER Michele Bertasi
+MAINTAINER Yevgeniy Shevekhman
 
 ADD fs/ /
 
