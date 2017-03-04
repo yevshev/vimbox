@@ -1,28 +1,21 @@
 set nocompatible              " be iMproved, required
-filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+call plug#begin()
 
 " custom plugins
-Plugin 'fatih/vim-go'
-Plugin 'majutsushi/tagbar'
-Plugin 'shougo/neocomplete.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-fugitive'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'mbbill/undotree'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'scrooloose/nerdcommenter'
+Plug 'fatih/vim-go'
+Plug 'majutsushi/tagbar'
+Plug 'shougo/neocomplete.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-fugitive'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'mbbill/undotree'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'scrooloose/nerdcommenter'
 
 " all of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+call plug#end()            " required
 
 " general customizations
 syntax on
@@ -53,6 +46,7 @@ set laststatus=2
 let g:bufferline_echo = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'dark'
+let g:airline_powerline_fonts = 1
 
 " tagbar
 let g:tagbar_type_go = {
